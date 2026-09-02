@@ -44,13 +44,7 @@ This allowed me to see traffic strictly between the client and server.
 
 I observed bidirectional TCP traffic between the client and server. Network activity continued while the player was connected, and sometimes throwing a TCP Retransmission packet. Changes in network traffic occurred as the player interacted with the server. I compared TCP traffic during idle and active gameplay. Increased network activity was observed during player interactions, demonstrating the exchange of application data between the client and server.
 
-## Distribution of traffic between client and server
-
-192.168.86.26 (Client)
-        |
-        |
-        v
-192.168.86.20 (ATM Server)
+192.168.86.26 (Client) --> 192.168.86.20 (ATM Server)
 
 ![Minecraft TCP Traffic captured in Wireshark](screenshots/TCP-Packets.png)
 
