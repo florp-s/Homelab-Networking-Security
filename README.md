@@ -42,7 +42,7 @@ In order to isolate Minecraft traffic, I used the following filter within Wiresh
 
     tcp.port == 25565
 
-This isolated TCP traffic associated with port 25565, allowing me to analyze communication between the Minecraft client and server.r
+This isolated TCP traffic associated with port 25565, allowing me to analyze communication between the Minecraft client and server.
 
 I observed bidirectional TCP traffic between the client and server. Network activity continued while the player was connected. I also observed occasional TCP retransmissions during the capture. Changes in network traffic occurred as the player interacted with the server. I compared TCP traffic during idle and active gameplay. Increased network activity was observed during player interactions, demonstrating the exchange of application data between the client and server.
 
@@ -54,15 +54,9 @@ I observed bidirectional TCP traffic between the client and server. Network acti
 
 I observed the TCP three-way handshake being established. This includes the packets:
 
-SYN (Client informing the server to start a TCP connection with the server)
- |
- |
- |
-SYN-ACK (Server acknowledges the client's request and responds)
- |
- |
- v
-ACK (Client acknowledges the server's response, completing the three-way handshake.)
+1. **SYN** - The client requests a connection to the server.
+2. **SYN-ACK** - The server acknowledges the request and responds.
+3. **ACK** - The client acknowledges the server's response.
 
 After this exchange, the TCP connection is established, and Minecraft application data can then be transmitted.
 
