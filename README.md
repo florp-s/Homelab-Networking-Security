@@ -81,7 +81,7 @@ I will continue to test and examine the security implications of this configurat
 
 ## Skills and Concepts
 
-This project began as a fun hobby to host a server for a group of people. Over time, it developed into a project to develophands-onn experience with:
+This project began as a fun hobby to host a server for a group of people. Over time, it developed into a project to develop hands-on experience with:
 
 - TCP/IP
 - Client-server networking
