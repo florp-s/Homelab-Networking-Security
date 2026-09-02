@@ -46,7 +46,7 @@ I observed bidirectional TCP traffic between the client and server. Network acti
 
 192.168.86.26 (Client) --> 192.168.86.20 (ATM Server)
 
-![Minecraft TCP Traffic captured in Wireshark](screenshots/TCP-Packets.png)
+![Minecraft TCP Traffic captured in Wireshark](Screenshots/TCP-Packets.png)
 
 
 ## Anaylsis 
